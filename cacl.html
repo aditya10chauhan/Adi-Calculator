@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adi Calc</title>
+    <link rel="stylesheet" href="css/calc.css">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="calculator">
+            <div class="calculator-header">
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round"></div>
+                  </label>
+                </div>
+            </div>
+            <div class="calculator-body">
+                <div>
+                    <h1 id="output">Aditya Calc</h1>
+                    <p id="input"></p>
+                </div>
+
+            </div>
+            <div class="calculator-footer">
+           <div class="symbol" onclick="calculate('C')"><span><b>C</b></span></div>
+           <div class="symbol" onclick="calculate('AC')"><span><b>AC</b></span></div>
+           <div class="symbol" onclick="calculate('%')"><span><b>%</b></span></div>
+           <div class="symbol" onclick="calculate('/')"><span><b>/</b></span></div>
+           <div onclick="calculate('7')"><span><b>7</b></span></div>
+           <div onclick="calculate('8')"><span><b>8</b></span></div>
+           <div onclick="calculate('9')"><span><b>9</b></span></div>
+           <div class="symbol" onclick="calculate('*')"><span><b>x</b></span></div>
+           <div onclick="calculate('4')"><span><b>4</b></span></div>
+           <div onclick="calculate('5')"><span><b>5</b></span></div>
+           <div onclick="calculate('6')"><span><b>6</b></span></div>
+           <div class="symbol" onclick="calculate('-')"><span><b>-</b></span></div>
+           <div onclick="calculate('1')"><span><b>1</b></span></div>
+           <div onclick="calculate('2')"><span><b>2</b></span></div>
+           <div onclick="calculate('3')"><span><b>3</b></span></div>
+           <div class="symbol" onclick="calculate('+')"><span><b>+</b></span></div>
+           <div onclick="calculate('0')"><span><b>0</b></span></div>
+           <div onclick="calculate('00')"><span><b>00</b></span></div>
+           <div onclick="calculate('.')"><span><b>.</b></span></div>
+           <div class="darksymbol" onclick="calculate('=')"><span><b>=</b></span></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Math.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.2.1/math.js"></script>
+
+    <!--calculator js-->
+    <script src="js/calc.js"></script>
+    
+</body>
+</html>
